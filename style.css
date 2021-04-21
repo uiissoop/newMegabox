@@ -1,0 +1,194 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+/* 여백 초기화 */
+body,div,ul,li,dl,dd,dt,ol,h1,h2,h3,h4,h5,h6,input,
+fieldset,legend,p,select,table,th,td,tr,textarea,button,form,figure,figcaption{
+    margin:0; padding:0;}
+
+/* a 링크 초기화 */
+a {color: #222; text-decoration: none;}
+html {
+    font-size: 10px;
+}
+/* 폰트 초기화 */
+body, input, textarea, select, button, table {
+    font-family:'Noto Sans KR', 'Nanum Gothic', AppleSDGothicNeo-Regular,'Malgun Gothic','맑은 고딕',dotum,'돋움',sans-serif; color: #222; font-size: 1.6rem; line-height: 1.5;}
+
+/* 폰트 스타일 초기화 */
+em,address {font-style: normal;}
+
+/* 블릿기호 초기화 */
+ul,li,ol {list-style:none;}
+
+/* 제목 태그 초기화 */
+h1,h2,h3,h4,h5,h6 {font-size: 1.6rem; font-weight: normal;}
+
+/* 테두리 초기화 */
+img,fieldset {border:0 none;}
+
+/* 버튼 초기화 */
+button {border: 0;}
+
+/* 반응형 */
+video, img {width: 100%;}
+
+/* clearfix */
+.clearfix{*zoom:1;}
+.clearfix:before, .clearfix:after {display: block; content: '';line-height: 0;}
+.clearfix:after {clear: both;}
+
+/* IR 효과 */
+.ir_pm {display:block; overflow:hidden; font-size:0; line-height:0; text-indent:-9999px;} /* 의미있는 이미지의 대체 텍스트를 제공하는 경우(Phark Method) */
+.ir_wa {display:block; overflow:hidden; position:relative; z-index:-1; width:100%; height: 100%;} /* 의미있는 이미지의 대체 텍스트로 이미지가 없어도 대체 텍스트를 보여주고자 할 때(WA IR) */
+.ir_su {overflow: hidden; position:absolute; width:0; height:0; line-height:0; text-indent:-9999px;} /* 대체 텍스트가 아닌 접근성을 위한 숨김 텍스트를 제공할 때 */
+
+/* margin, padding */
+.mt10 {margin-top: 10px !important;}
+.mt15 {margin-top: 15px !important;}
+.mt20 {margin-top: 20px !important;}
+.mt25 {margin-top: 25px !important;}
+.mt30 {margin-top: 30px !important;}
+.mt35 {margin-top: 35px !important;}
+.mt40 {margin-top: 40px !important;}
+.mt45 {margin-top: 45px !important;}
+.mt50 {margin-top: 50px !important;}
+
+
+
+
+/* header 영역 */
+/* ----------------- */
+header {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    z-index: 8;
+}
+
+
+header > div {
+    width: 1280px;
+    height: 91px;
+    margin: 0 auto;
+    border: 1px solid red;
+}
+
+.login-bar {
+    width: 1180px;
+    display: flex;
+    justify-content: space-between;
+    color: #888888;
+    margin: 13px auto 13px auto;
+}
+.login-bar ul {
+    display: flex;
+}
+.login-bar ul li {
+    margin-left: 20px;
+    font-size: 1.3rem;
+}
+.login-bar a {
+    color: #888888;
+    font-weight: 100;
+}
+.login-bar ul li:hover a {
+    color: #fff;
+    transition: 0.3s;
+}
+
+
+
+
+/* nav 영역 */
+/* ----------------- */
+nav {
+    width: 1180px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    margin: 0 auto;
+}
+
+
+nav h1 {
+    left: 50%;  
+    position: absolute;
+    transform: translateX(-50%);
+}
+nav a {
+    color: #fff;    
+}
+
+nav ul {
+    display: flex;
+}
+nav ul li {
+    font-size: 1.9rem;
+    margin-left: 20px;
+}
+nav ul li:hover a {
+    cursor: pointer;
+}
+
+
+.main-background-imgcontainer {
+    height: 775px;
+    width: 100%;
+    background-image: url("./assets/image/header-background-image.png");
+    background-size: cover;
+}
+.main-background-colorcontainer {
+    height: 775px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    background-repeat: no-repeat;
+}
+
+/* ==================== header 따로 값 지정 */
+
+.header-last-child { margin-right: 20px; }
+
+#nav-ham {
+    position: relative;
+}
+.hamburger-button {
+	position: relative;
+	transition: .3s ease-in-out;
+	width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.hamburger-button span {
+    position: absolute;
+    height: 2.5px;
+    border-radius: 4px;
+    width: 100%;
+    background-color: #bebebe;
+    transition: 0.2s;
+}
+
+.hamburger-button span:nth-child(1) {
+    top: 5px;
+}
+.hamburger-button span:nth-child(2), .hamburger-button span:nth-child(3) {
+    top: 14px;
+}
+.hamburger-button span:nth-child(4) {
+    top: 23px;
+}
+
+
+.hamburger-button.active span:nth-child(1), .hamburger-button.active span:nth-child(4) {
+    opacity: 0;
+}
+
+.hamburger-button.active span:nth-child(2) {
+    transform: rotate(45deg);
+} 
+
+.hamburger-button.active span:nth-child(3) {
+    transform: rotate(-45deg);
+} 
