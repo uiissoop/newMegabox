@@ -63,6 +63,7 @@ header {
     display: flex;
     width: 100%;
     z-index: 8;
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3)
 }
 
 
@@ -70,12 +71,12 @@ header > div {
     width: 1280px;
     height: 91px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .login-bar {
-    width: 1180px;
+    width: 1160px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     color: #888888;
     margin: 13px auto 13px auto;
@@ -102,7 +103,7 @@ header > div {
 /* nav 영역 */
 /* ----------------- */
 nav {
-    width: 1180px;
+    width: 1160px;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -112,12 +113,20 @@ nav {
 
 
 nav h1 {
+    width: 200px;
+    height: 70px;
     left: 50%;  
+    top: -100%;
     position: absolute;
     transform: translateX(-50%);
+    background-image: url("./assets/SVG/mega-box-logo.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
 }
 nav a {
-    color: #fff;    
+    color: #fff;   
+
 }
 
 nav ul {
@@ -127,6 +136,9 @@ nav ul li {
     font-size: 1.9rem;
     margin-left: 20px;
 }
+nav ul li a {
+    padding-left: 35px;
+}
 nav ul li:hover a {
     cursor: pointer;
 }
@@ -135,7 +147,7 @@ nav ul li:hover a {
 .main-background-imgcontainer {
     height: 775px;
     width: 100%;
-    background-image: url("./assets/image/header-background-image.png");
+    background-image: url("./assets/image/header-background-image02.png");
     background-size: cover;
 }
 .main-background-colorcontainer {
@@ -163,7 +175,7 @@ nav ul li:hover a {
 
 .hamburger-button span {
     position: absolute;
-    height: 2.5px;
+    height: 2px;
     border-radius: 4px;
     width: 100%;
     background-color: #bebebe;
@@ -192,3 +204,91 @@ nav ul li:hover a {
 .hamburger-button.active span:nth-child(3) {
     transform: rotate(-45deg);
 } 
+
+
+#nav-search-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/SVG/nav-serach-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+#nav-list {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/SVG/nav-list-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+#nav-user-icon {
+    width: 30px;
+    height: 30px;
+    background-image: url("/assets/SVG/nav-user-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* 미디어쿼리 */
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 9px;
+    }
+    header > div {
+        width: 100%;
+        height: 80px;
+    }
+    .login-bar {
+        width: 100%;
+        margin: 11px auto 11px auto;
+    }
+    nav {
+        width: 100%;
+    }
+}
+@media (max-width: 1024px) {
+    .login-bar {
+        display: none;
+    }
+    header > div {
+        display: flex;
+        align-items: center;
+    }
+    nav > ul > li > a {
+        display: none;
+    }
+    nav h1 {
+        width: 240px;
+        height: 80px;
+        left: 50%;  
+        top: -90%;
+    }
+}
+@media (max-width: 960px) {
+
+}
+@media (max-width: 760px) {
+    .login-bar ul li {
+        margin-left: 6px;
+
+    }
+    nav ul li {
+        margin-left: 6px;
+    }
+
+    .header-last-child { margin-right: 6px; }
+
+@media (max-width: 480px) {
+
+}
+@media (max-width: 320px) {
+
+}
