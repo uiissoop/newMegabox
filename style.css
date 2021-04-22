@@ -209,7 +209,7 @@ nav ul li:hover a {
 #nav-search-icon {
     width: 30px;
     height: 30px;
-    background-image: url("/assets/SVG/nav-serach-icon.svg");
+    background-image: url("./assets/SVG/nav-serach-icon.svg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 10px;
@@ -219,7 +219,7 @@ nav ul li:hover a {
 #nav-list {
     width: 30px;
     height: 30px;
-    background-image: url("/assets/SVG/nav-list-icon.svg");
+    background-image: url("./assets/SVG/nav-list-icon.svg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 65px;
@@ -229,7 +229,7 @@ nav ul li:hover a {
 #nav-user-icon {
     width: 30px;
     height: 30px;
-    background-image: url("/assets/SVG/nav-user-icon.svg");
+    background-image: url("./assets/SVG/nav-user-icon.svg");
     background-repeat: no-repeat;
     background-size: cover;
     margin-left: 10px;
@@ -278,14 +278,11 @@ nav ul li:hover a {
 @media (max-width: 760px) {
     .login-bar ul li {
         margin-left: 6px;
-
     }
     nav ul li {
         margin-left: 6px;
     }
-
-    .header-last-child { margin-right: 6px; }
-
+}
 @media (max-width: 480px) {
 
 }
