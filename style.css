@@ -58,6 +58,9 @@ video, img {width: 100%;}
 
 /* header 영역 */
 /* ----------------- */
+.wrap {
+    position: relative;
+}
 header {
     position: fixed;
     display: flex;
