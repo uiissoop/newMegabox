@@ -296,7 +296,6 @@ nav h1 {
         margin-left: 6px;
     }
     .header-last-child { margin-right: 6px; }
-
 }
 @media (max-width: 480px) {
 
@@ -305,6 +304,7 @@ nav h1 {
 
 }
 
-main {
 
+div {
+    
 }
