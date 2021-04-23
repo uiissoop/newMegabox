@@ -63,11 +63,17 @@ video, img {width: 100%;}
     position: relative;
 }
 header {
-    position: fixed;
     display: flex;
     width: 100%;
     z-index: 7;
-    border-bottom: 1px solid rgba(204, 204, 204, 0.3)
+    border-bottom: 1px solid rgba(204, 204, 204, 0.3);
+    position: absolute;
+    transition: 0.3s ease-in-out;
+}
+
+.header-background {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.9);
 }
 
 
@@ -292,10 +298,6 @@ main {
 
 
 .main-slider {
-    width: 1120px;
-    display: flex;
-    justify-content: space-between;
-    margin: 0 auto;
     height: 700px;
     padding-top: 25px;
 }
@@ -345,12 +347,14 @@ main {
     display: flex;
     visibility: hidden;
     position: relative;
+    z-index: 6;
 }
 .main-txt-box p {
     color: #fff;
     font-size: 1.5rem;
     padding: 25px;
     line-height: 1.5;
+    z-index: 8;
 }
 
 .main-txt-box div {
