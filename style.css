@@ -272,16 +272,14 @@ main {
     z-index: 6;
 }
 .main-container {
+    width: 1120px;
     margin: 0 auto;
     padding-top: 192px;
 }
 
 .main-container h1 {
-    width: 1120px;
     font-size: 1.6rem;
     color: #fff;
-    padding: 0px;
-    margin: 0 auto;
     position: relative;
     margin-bottom: 10px;
 }
@@ -298,7 +296,6 @@ main {
 
 
 .main-slider {
-    height: 700px;
     padding-top: 25px;
 }
 
@@ -311,8 +308,10 @@ main {
     border: 1px solid #fff;
     border-image: linear-gradient(-45deg, #ffffffbe, #464646aa);
     border-image-slice: 1;
+    box-sizing: border-box;
     background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
 }
+
 
 
 .main-slider > li:hover {
@@ -334,9 +333,9 @@ main {
 
 .main-slider > li > figure > img {
     position: absolute;
+    width: 244px;
     border-radius: 7px;
     z-index: -1;
-    object-fit: cover;
 }
 
 /* figure 안에 divbox */
@@ -385,13 +384,14 @@ main {
 
 .main-slider > li:hover > figure > div {
     visibility: visible;
-    width: 100%;
+    width: 99.5%;
     height: 100%;
     display: block;
     border-radius: 7px;
     background-color: rgba(0, 0, 0, 0.7);
     transition: 0.2s linear;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 
@@ -449,6 +449,8 @@ main {
 
 /* 미디어쿼리 */
 
+
+
 @media (max-width: 1280px) {
     html {
         font-size: 9px;
@@ -456,6 +458,7 @@ main {
     header > div {
         width: 100%;
         height: 80px;
+        margin: 0px 50px 0px 50px;
     }
     .login-bar {
         width: 100%;
@@ -464,7 +467,58 @@ main {
     nav {
         width: 100%;
     }
+
+    /* ==========메인영역 시작 */
+    .main-container {
+        width: 100%;
+        overflow: hidden;
+    }
+
+
+    
+
+    .main-container h1 {
+        width: 80px;
+        text-align: left;
+        margin-left: 72px;
+    }
+
+    .main-container h1:before {
+        position: absolute;
+        bottom: -10px;
+        content: "";
+        width: 85%;
+        height: 1px;
+        animation: blink 0.5s linear infinite;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+
 }
+
+@media (max-width: 1160px) {
+    .login-bar {
+        display: none;
+    }
+
+    
+    header > div {
+        display: flex;
+        align-items: center;
+        margin: 0px;
+    }
+    nav > ul > li > a {
+        display: none;
+    }
+    nav h1 {
+        width: 240px;
+        height: 80px;
+        left: 50%;  
+        top: -90%;
+    }
+
+}
+
 @media (max-width: 1024px) {
     .login-bar {
         display: none;
@@ -472,6 +526,7 @@ main {
     header > div {
         display: flex;
         align-items: center;
+        margin: 0px;
     }
     nav > ul > li > a {
         display: none;
@@ -483,8 +538,8 @@ main {
         top: -90%;
     }
 }
-@media (max-width: 960px) {
 
+@media (max-width: 960px) {
 }
 @media (max-width: 760px) {
     .login-bar ul li {
@@ -500,6 +555,7 @@ main {
         height: 60px;
         top: -60%;
     }
+
 }
 @media (max-width: 480px) {
 

@@ -1,6 +1,7 @@
 const slide = new Swiper('.swiper-container', {
   slidesPerView : 'auto', // 한 슬라이드에 보여줄 갯수
-  spaceBetween : 44.5, // 슬라이드 사이 여백
+  spaceBetween : 42, 
+  // 슬라이드 사이 여백
   loop : true, // 슬라이드 반복 여부
   loopAdditionalSlides : 1, // 슬라이드 반복 시 마지막 슬라이드에서 다음 슬라이드가 보여지지 않는 현상 수정
   pagination : false, // pager 여부
@@ -8,5 +9,45 @@ const slide = new Swiper('.swiper-container', {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
   },
-  slidesOffsetBefore : 4, // 슬라이드 시작 부분 여백
+  // slidesOffsetBefore :  // 슬라이드 시작 부분 여백
+
+  breakpoints : { // 반응형 설정이 가능 width값으로 조정
+    1024 : {
+      slidesPerView : 4,
+      spaceBetween : 85, // 슬라이드 사이 여백
+    },
+
+    1281 : {
+      slidesPerView : 4,
+      spaceBetween : 45, // 슬라이드 사이 여백
+    },
+
+    1980 : {
+      slidesPerView : 4 ,
+      spaceBetween : 20, // 슬라이드 사이 여백
+    },
+  },
+  
   })
+
+  // var swiper = new Swiper('.swiper-container', {
+  //   slidesPerView: 1,
+  //   spaceBetween: 10,
+  //   breakpoints: {
+  //     '@0.75': {
+  //       slidesPerView: 2,
+  //       spaceBetween: 20,
+  //     },
+  //     '@1.00': {
+  //       slidesPerView: 3,
+  //       spaceBetween: 40,
+  //     },
+  //     '@1.50': {
+  //       slidesPerView: 4,
+  //       spaceBetween: 50,
+  //     },
+  //   }
+  // });
+
+
+  

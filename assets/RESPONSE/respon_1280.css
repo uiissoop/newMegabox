@@ -1,0 +1,177 @@
+
+
+@media (max-width: 1280px) {
+    html {
+        font-size: 9px;
+    }
+    header > div {
+        width: 100%;
+        height: 80px;
+        margin: 0px 50px 0px 50px;
+    }
+    .login-bar {
+        width: 100%;
+        margin: 11px auto 11px auto;
+    }
+    nav {
+        width: 100%;
+    }
+
+    /* ==========메인영역 시작 */
+    .main-container {
+        width: 70%;
+        overflow: hidden;
+    }
+
+    .main-container h1 {
+        width: 80px;
+        text-align: left;
+        margin-left: 72px;
+    }
+
+    .main-container h1:before {
+        position: absolute;
+        bottom: -10px;
+        content: "";
+        width: 85%;
+        height: 1px;
+        animation: blink 0.5s linear infinite;
+        background-color: rgba(255, 255, 255, 0.5);
+    }
+
+
+
+    /* main slider 부분 */
+
+    .main-slider > li {
+        width: 100%;
+        height: 100%;
+    }
+    
+    
+    
+    .main-slider > li:hover {
+        border-radius: 7px;
+        border-image: linear-gradient(-45deg,  #8326cfaa, #26c9cfaa);
+        border-image-slice: 1;
+        background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+        transition: 0.2s linear;
+    }
+    
+    .main-slider > li > figure {
+        width: 214px;
+        height: 70%;
+        display: block;
+        border-radius: 7px;
+        position: relative;
+        margin-bottom: 8px;
+    }
+    
+    .main-slider > li > figure > img {
+        width: 100px;
+        border-radius: 7px;
+        z-index: -1;
+        border: 1px solid red;
+        object-fit: contain;
+    }
+    
+    /* figure 안에 divbox */
+    
+    .main-txt-box {
+        width: 245px;
+        height: 352px;
+        display: flex;
+        visibility: hidden;
+        position: relative;
+        z-index: 6;
+    }
+    .main-txt-box p {
+        color: #fff;
+        font-size: 1.5rem;
+        padding: 25px;
+        line-height: 1.5;
+        z-index: 8;
+    }
+    
+    .main-txt-box div {
+        width: 195px;
+        height: 75px;
+        bottom: 0px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        border-image: linear-gradient(-90deg, #8326cfaa, #26c9cfaa );
+        border-image-slice: 1;
+        background-image: linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0)), linear-gradient(rgba(255, 255, 255, 0),rgba(255, 255, 255, 0));
+        position: absolute;
+    }
+    
+    .main-txt-box div > div {
+        display: flex;
+        width: 90px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .main-txt-box div > strong {
+        font-weight: 800;
+        font-size: 2.2rem;
+        color: rgb(158, 0, 197);
+    }
+    
+    .main-slider > li:hover > figure > div {
+        visibility: visible;
+        width: 99.5%;
+        height: 100%;
+        display: block;
+        border-radius: 7px;
+        background-color: rgba(0, 0, 0, 0.7);
+        transition: 0.2s linear;
+        z-index: 1;
+        box-sizing: border-box;
+    }
+    
+    
+    
+    .main-slider > li > button {
+        all: unset;
+        background-color: rgba(255, 255, 255, 0);
+        margin-left: 7px;
+    }
+    
+    
+    .main-slider > li > button > i {
+        width: 27px;
+        height: 27px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        font-size: 1.7rem;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid rgba(255, 255, 255, 0.5);
+    }
+    
+    .main-slider > li > strong {
+        all: unset;
+        font-size: 1.4rem;
+        color: #fff;
+        display: inline-block;
+        width: 25px;
+    }
+    
+    .main-slider > li > span {
+        padding-left: 27px;
+    }
+    
+    
+    .main-slider > li > span > a {
+        color: #fff;
+        padding: 2px 40px 5px 40px;
+        background-color: rgb(112, 1, 139);
+        border-radius: 3px;
+    }
+    
+
+}
