@@ -60,7 +60,13 @@
 
         <main>
             <div class="main-container">
-                <h1>박스오피스</h1>
+                <div class="search-movies-box">
+                    <h1>박스오피스</h1>
+                    <div>
+                        <input type="text" placeholder="영화명을 입력해주세요">
+                        <i id="main-search-icon"></i>
+                    </div>
+                </div>  <!--serach-movies-box //-->
                 <div class="swiper-container">
                     <ul class="main-slider swiper-wrapper">
                         <li class="swiper-slide">
@@ -238,8 +244,20 @@
                         </li>
                         
                     </ul>
-                </div>
-            </div>
+                </div> <!--swiper-container //-->
+                <div class="quick-reserve-container">
+                    <ul>
+                        <li class="movie-schedule-box">
+                            <i class="schedule-icon"></i>
+                            <a href="#">상영시간표</a>
+                        </li>
+                        <li class="quick-reserve-box">
+                            <i class="reserve-icon"></i>
+                            <a href="#">빠른예매</a>
+                        </li>
+                    </ul>
+                </div> <!--quick-reserve-container //-->
+            </div> <!--main-container //-->
         </main>
 
     </div>

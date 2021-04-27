@@ -6,7 +6,7 @@
  .swiper-container {
     width: auto;
     height: 100%;
-    margin: 0 auto;
+    margin: 0 auto 50px;
     position: relative;
     overflow: hidden;
     list-style: none;
@@ -216,7 +216,7 @@ button.swiper-pagination-bullet {
 
 
 
-@media (max-width: 1279px) {
+@media (max-width: 1280px) {
     .swiper-container {
         width: auto;
         margin-left: 70px;
