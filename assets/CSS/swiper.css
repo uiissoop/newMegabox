@@ -4,7 +4,7 @@
  * http://www.idangero.us/swiper/
  **/
  .swiper-container {
-    width: 1120px;
+    width: 1120;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -211,7 +211,6 @@ button.swiper-pagination-bullet {
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
     margin: 0 4px;
-    
 }
 
 
@@ -219,24 +218,58 @@ button.swiper-pagination-bullet {
 
 @media (max-width: 1280px) {
     .swiper-container {
-        width: 100%;
+        width: auto;
         margin-left: 70px;
+        margin-right: 70px;
+    }
+    .swiper-slide {
+        width: 310px;
+    }
+
+
+}
+
+@media (max-width: 1160px) {
+    .swiper-container {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
     }
 
 }
+@media (max-width: 1024px) {
+    .swiper-container {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
 
 @media (max-width: 960px) {
+    .swiper-container {
+        width: auto;
+        margin: 0 auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
 }
 
 @media (max-width: 760px) {
+    .swiper-container {
+        width: 100%;
+        margin-left: 6px;
+        margin-right: 6px;
+        overflow: hidden;
+    }
+}
 
+/* @media (max-width: 740px) {
 
 }
-@media (max-width: 480px) {
 
-}
 @media (max-width: 320px) {
 
-}
+} */
 
 

@@ -12,19 +12,44 @@ const slide = new Swiper('.swiper-container', {
   // slidesOffsetBefore :  // 슬라이드 시작 부분 여백
 
   breakpoints : { // 반응형 설정이 가능 width값으로 조정
-    1024 : {
-      slidesPerView : 4,
-      spaceBetween : 85, // 슬라이드 사이 여백
+    561 : {
+      slidesPerView : 3,
+      spaceBetween : 90, // 슬라이드 사이 여백
     },
+
+
+    861 : {
+      slidesPerView : 3,
+      spaceBetween : 100, // 슬라이드 사이 여백
+    },
+
+
+    
+
+    961 : {
+      slidesPerView : 3,
+      spaceBetween : 120, // 슬라이드 사이 여백
+
+    },
+
+ 
+
+    1025 : {
+      slidesPerView : 4,
+      spaceBetween : 45, // 슬라이드 사이 여백
+
+    },
+
+
 
     1281 : {
       slidesPerView : 4,
-      spaceBetween : 45, // 슬라이드 사이 여백
+      spaceBetween : 50, // 슬라이드 사이 여백
     },
 
     1980 : {
       slidesPerView : 4 ,
-      spaceBetween : 20, // 슬라이드 사이 여백
+      spaceBetween : 30, // 슬라이드 사이 여백
     },
   },
   
