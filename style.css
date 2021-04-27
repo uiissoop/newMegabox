@@ -399,8 +399,9 @@ main {
     border-radius: 3px;
     background-color: rgb(153, 0, 153);
     position: absolute;
-    right: 5px;
-    bottom: 5px;
+    right: 4px;
+    bottom: 4px;
+    padding-bottom: 3px;
 
 }
 
