@@ -566,6 +566,7 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     width: 100%;
     height: 100%;
     position: relative;
+    overflow: hidden;
 }
 
 .background-video-area > figure {
@@ -656,7 +657,8 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     width: 100%;
     background-color: rgba(0, 0, 0, 0.9);
     padding-top: 40px;
-    padding-bottom: 200px;
+    padding-bottom: 120px;
+    overflow: hidden;
 }
 .curation-title-box {
     width: 1120px;
@@ -780,7 +782,7 @@ input:focus::-webkit-input-placeholder {color:transparent; }
 
 
 
-.hi {
+.guide-container {
     width: 100%;
     height: 700px;
     background-color: rgb(37, 36, 81);
@@ -826,9 +828,44 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     .video-area-textbox {
         width: 100%;
         margin-left: 70px;
+    }
+    .curation-title-box {
+        width: 100%;
+    }
+    .curation-title-box h1 {
+        margin-left: 70px;
+    }
+    .curation-title-box a {
+        margin-right: 70px;
+    }
+
+    .curation-content-container {
+        width: 100%;
+        align-items: center;
 
     }
+    .main-curation-box {
+        margin-left: 70px;
+    }
+
+    .curation-boxs {
+        width: 100%;
+        height: 300px;
+        margin-left: 50px;
+        margin-right: 70px;
+    }
+
+    .curation-contents-info {
+        display: none;
+    }
+
+    .main-curation-box > figure {
+        width: 300px;
+        height: 482px;
+    }
 }
+
+
 
 
 @media (max-width: 1160px) {
@@ -855,16 +892,26 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     .search-movies-box {
         width: auto;
         margin: 0px 20px 0px 20px;   
-
     }
 
     .video-area-textbox {
         width: 100%;
         margin-left: 20px;
-
     }
 
+    .curation-title-box h1 {
+        margin-left: 20px;
+    }
+    .curation-title-box a {
+        margin-right: 20px;
+    }
 
+    .curation-boxs {
+        margin-right: 20px;
+    }
+    .main-curation-box {
+        margin-left: 20px;
+    }
 }
 
 
@@ -890,14 +937,13 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         background-color: black;
     }
 
-
 }
 
 
 
 
 @media (max-width: 960px) {
-    .slider-text-box p {
+    /* .slider-text-box p {
         font-size: 1.4rem;
     }
     .slider-text-box dl {
@@ -905,8 +951,10 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     }
     .slider-text-box dt {
         font-size: 1.6rem;
+    } */
+    html {
+        font-size: 8.5px;
     }
-
     .main-slider > li {
         height: 353.5px;
     }
@@ -933,6 +981,9 @@ input:focus::-webkit-input-placeholder {color:transparent; }
 
 
 @media (max-width: 760px) {
+    html {
+        font-size: 7.5px;
+    }
     .login-bar ul li {
         margin-left: 6px;
     }
@@ -953,8 +1004,6 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         margin-left: 8px;
     }
     
-
-
     .search-movies-box div {
         width: 190px;
     }
@@ -980,14 +1029,12 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         display: none;
     }
     .video-area-textbox h1 {
-        font-size: 1.7rem;
     } 
     .video-area-textbox i {
         width: 20px;
         height: 15px;
     }
     .video-area-textbox dl {
-        font-size: 1.3rem;
         margin: 0px;
     }
 
@@ -995,8 +1042,46 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         margin: 0px 3px;
     }
 
+    .curation-title-box h1 {
+        margin-left: 6px;
+    }
+    .curation-title-box a {
+        margin-right: 6px;
+    }
+    .main-curation-box {
+        margin-left: 6px;
+    }
+    .curation-boxs {
+        margin-right: 6px;
+    }
+
+
+
 }
 
+@media (max-width: 720px) {
+    .curation-content-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main-curation-box {
+        margin-bottom: 50px;
+    }
+    .curation-maindetail-info {
+
+    }
+    .curation-boxs {
+        margin: 0px;
+    }
+    .curation-boxs dl {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .curation-boxs div {
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+}
 @media (min-width: 480px) {
 
 }
