@@ -54,13 +54,20 @@
             </div>
         </header>
         <!--header 영역//-->
-        <div class="main-background-imgcontainer">
-            <div class="main-background-colorcontainer"></div>
-        </div>
+
 
         <main>
+            <div class="main-background-imgcontainer">
+                <div class="main-background-colorcontainer"></div>
+            </div>
             <div class="main-container">
-                <h1>박스오피스</h1>
+                <div class="search-movies-box">
+                    <h1>박스오피스</h1>
+                    <div>
+                        <input type="text" placeholder="영화명을 입력해주세요">
+                        <i id="main-search-icon"></i>
+                    </div>
+                </div>  <!--serach-movies-box //-->
                 <div class="swiper-container">
                     <ul class="main-slider swiper-wrapper">
                         <li class="swiper-slide">
@@ -238,10 +245,81 @@
                         </li>
                         
                     </ul>
-                </div>
-            </div>
+                </div> <!--swiper-container //-->
+                <div class="quick-reserve-container">
+                    <ul>
+                        <li class="movie-schedule-box">
+                            <i class="schedule-icon"></i>
+                            <a href="#">상영시간표</a>
+                        </li>
+                        <li class="quick-reserve-box">
+                            <i class="reserve-icon"></i>
+                            <a href="#">빠른예매</a>
+                        </li>
+                    </ul>
+                </div> <!--quick-reserve-container //-->
+            </div> <!--main-container //-->
         </main>
 
+        <section class="background-video-area">
+            <div class="section-background-colorcontainer"></div>
+            <figure>
+                <video src="./assets/videos/Raya-Dragon.mp4" poster="./assets/videos/Raya_Dragon.jpg" loop="loop" autoplay="" muted=""></video>
+            </figure>
+            <div class="video-area-textbox">
+                <h1>라야와 마지막 드래곤</h1><i class="all-icon"></i>
+                <dl>
+                    <dt>영화<span>></span>전체영화<span>></span> </dt>
+                    <dd> 라야와 마지막 드래곤</dd>
+                </dl>
+            </div>
+            <div class="the-moremovie-container">
+                <a href="#">더 많은 영화 보러가기</a>
+            </div>
+        </section> <!-- background-video-area //-->
+
+        <section class="curation-container">
+            <div class="curation-title-box">
+                <h1>큐레이션</h1>
+                <a href="#">큐레이션 더보기 <i class="fas fa-plus"></i></a>
+            </div>
+            <div class="curation-content-container">
+                <div class="main-curation-box">
+                    <figure>
+                        <img src="./assets/image/section-curation-image/curation-image01.png" alt="오페라 : 코지 판 코테">
+                        <ul>
+                            <li class="curation-more-info">상세정보</li>
+                            <li class="curation-reserve">예매</li>
+                        </ul>
+                    </figure>
+                </div>
+                <div class="curation-boxs">
+                    <dl>
+                        <dt>#클래식소사이어티</dt>
+                        <dd>[오페라] 코지 판 투테</dd>
+                    </dl>
+                    <div>
+                        <h4>[상영정보]</h4>
+                        <ul class="curation-maindetail-info">
+                            <li>상영지점 : 코엑스,센트럴,목동,킨텍스,분당,성수,세종청사</li>
+                            <li>러닝 타임 : 132분 * 인터미션 없음</li>
+                            <li>상영 일정 : 2021년 6월 20일(일) ~ 2021년 7월 8일(수) / 수 19:00 (목동, 킨텍스, 센트럴 14:00), 일 14:00 상영</li>
+                            <li>거리두기 단계에 따라 평일 저녁 상영 시간은 조정될 수 있습니다.</li>
+                            <li>배급사 사정에 따라 상영 일정 및 지점 등이 변경될 수 있습니다.</li>
+                        </ul>
+                        <ul class="curation-contents-info">
+                            <li><img src="./assets/image/section-curation-image/curation-image02.png" alt="영화: 노매드랜드-이미지"><span>노 매드 랜드</span></li>
+                            <li><img src="./assets/image/section-curation-image/curation-image03.png" alt="영화: 바이올린 플레이어-이미지"><span>바이올린 플레이어</span></li>
+                            <li><img src="./assets/image/section-curation-image/curation-image04.png" alt="영화: 당신의 사월-이미지"><span>당신의 사월</span></li>
+                            <li><img src="./assets/image/section-curation-image/curation-image05.png" alt="영화: 피가로의 결혼-이미지"><span>피가로의 결혼</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section> <!--curation-container //-->
+        <section class="hi">
+
+        </section>
     </div>
     <script src="assets/js/jquery-3.6.0.js"></script>
     <script src="assets/js/nav.js"></script>
