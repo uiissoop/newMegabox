@@ -253,7 +253,9 @@ nav h1 {
 /* ----------------- */
 
 .main-background-imgcontainer {
+
     height: 850px;
+    height: 875px;
     width: 100%;
     background-image: url("./assets/image/header-background-image02.png");
     background-size: cover;
@@ -261,7 +263,9 @@ nav h1 {
     z-index: -1;
 }
 .main-background-colorcontainer {
+
     height: 850px;
+    height: 875px;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     position: absolute;
@@ -477,6 +481,7 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     justify-content: center;
     align-items: center;
     margin: 0 auto 50px;
+    margin: 0 auto;
     background-color: rgba(29, 29, 29, 0.4);
 }
 .quick-reserve-container > ul {
@@ -493,6 +498,33 @@ input:focus::-webkit-input-placeholder {color:transparent; }
 .quick-reserve-container > ul > li > a {
     margin-left: 20px;
 }
+
+
+.schedule-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("./assets/SVG/main-list-icon.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.reserve-icon {
+    width: 40px;
+    height: 40px;
+    background-image: url("./assets/SVG/main-ticket-icon.svg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.quick-reserve-container i {
+    font-size: 2rem;
+    color: #fff;
+    font-weight: 600;
+
+}
+.quick-reserve-container a {
+    color: #fff;
+}
+
 
 
 /* .movie-schedule-box {
@@ -790,13 +822,12 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         margin: 0px 70px 0px 70px;   
     }
 
+
     .video-area-textbox {
         width: 100%;
         margin-left: 70px;
 
     }
-
-
 }
 
 
@@ -824,11 +855,13 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     .search-movies-box {
         width: auto;
         margin: 0px 20px 0px 20px;   
+
     }
 
     .video-area-textbox {
         width: 100%;
         margin-left: 20px;
+
     }
 
 
@@ -921,9 +954,11 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     }
     
 
+
     .search-movies-box div {
         width: 190px;
     }
+
 
 
 
@@ -931,6 +966,7 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         width: auto;
         margin: 0px 6px 0px 6px;   
     }
+
 
     .background-video-area {
         width: 100%;
