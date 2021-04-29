@@ -788,13 +788,15 @@ input:focus::-webkit-input-placeholder {color:transparent; }
 
 .guide-container {
     width: 100%;
-    height: 700px;
-    background-color: rgb(37, 36, 81);
+    /* background-color: rgb(37, 36, 81); */
+    background-color: rgba(255, 255, 255, 0.9);
     padding-top: 40px;
+    overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .guide-container h1 {
-    color: #fff;
+    color: #000;
     font-size: 3rem;
     width: 1120px;
     margin: 0 auto 40px;
@@ -818,6 +820,8 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     cursor: pointer;
     overflow: hidden;
 }
+
+
 
 .guide-content-box ul li div {
     position: absolute;
@@ -843,7 +847,6 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     width: 50%;
     height: 100%;
     background-color: rgba(134, 134, 134, 0.5);
-
     position: absolute;
     right: 0px;
 }
@@ -864,44 +867,152 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     border-radius: 5px;
 }
 .guide-notice-wrap {
+    display: none;
     width: 100%;
-    border-top: 1px solid rgba(204, 204, 204, 0.1);
-    border-bottom: 1px solid rgba(204, 204, 204, 0.1);
+    border-top: 1px solid rgba(14, 14, 14, 0.1);
+    border-bottom: 1px solid rgba(14, 14, 14, 0.1);
     height: 60px;
     display: flex;
     align-items: center;
+    margin-bottom: 40px;
 }
+
 .guide-notice-box {
+    clear: both;
     width: 1120px;
     margin: 0 auto;
-    color: #fff;
-    display: flex;
+    color: #000;
     justify-content: space-between;
-    
 }
 
 .guide-notice-box a {
-    display: flex;
-    color: #fff;
+    color: #000;
+    margin-left: 60px;
+}
+
+.text-nodeco {
+    text-decoration: none;
+}
+
+
+
+.guide-notice-box a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+
 }
 
 .guide-notice-box a > strong {
-    margin-left: 100px;
     font-weight: 400;
     font-size: 1.7rem;
+    position: relative;
+    color:rgb(49, 188, 173);
 } 
+
+.guide-notice-box a > strong:after {
+    position: absolute;
+    left: -30px;
+    content: "|";
+    color: rgba(14, 14, 14, 0.1);
+}
 
 .guide-notice-box a span {
     margin-left: 15px;
 }
 
 .guide-notice-box div {
+    float: right;
     display: flex;
 }
+.notice-date {
+    color: rgb(158, 158, 158);
+}
+
+.notive-themore {
+    margin-left: 40px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.notive-themore:after {
+    content: "|";
+    position: absolute;
+    left: -10px;
+    color: rgba(14, 14, 14, 0.1);
+}
+
+
+.guide-themore-icon {
+    display: block;
+    width: 15px;
+    height: 15px;
+    background-image: url("./assets/SVG/guide-themore-icon.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 10px;
+    position: relative;
+    bottom: -1px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+.guide-info-container {
+    width: 1120px;
+    margin: 0 auto;
+}
+
+.guide-info-container > ul {
+    display: flex;
+    justify-content: space-between;
+}
+.guide-info-container > ul > li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.guide-info-container > ul > li > span {
+    width: 130px;
+    text-align: center;
+}
+.guide-info-container > ul > li > i {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 /* 미디어쿼리 */
+.guide-center-icon {
+    background-image: url("./assets/SVG/guide-center.svg");
+}
+.guide-question-icon {
+    background-image: url("./assets/SVG/guide-question.svg");
+}
+.guide-conver-icon {
+    background-image: url("./assets/SVG/guide-conver.svg");
+}
+.guide-member-icon {
+    background-image: url("./assets/SVG/guide-member.svg");
+}
+.guide-receipt-icon {
+    background-image: url("./assets/SVG/guide-receipt.svg");
+}
+.guide-private-icon {
+    background-image: url("./assets/SVG/guide-private.svg");
+}
 
-
-
+.hi {
+    width: 1120px;
+    height: 500px;
+    margin: 0 auto;
+}
 
 
 @media (max-width: 1280px) {
@@ -971,6 +1082,50 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         width: 300px;
         height: 482px;
     }
+
+    .guide-content-box {
+        width: 100%;
+    }
+    .guide-content-box ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        color: #fff;
+    }
+    .guide-content-box ul li {
+        margin-bottom: 20px;
+    }
+
+
+    .guide-container h1 {
+        width: 100%;
+        margin-left: 60px;
+    }
+    .guide-content-box {
+        width: auto;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    .guide-notice-box {
+        margin-left: 60px;
+    }
+    .notive-themore {
+        margin-right: 60px;
+    }
+    .guide-info-container {
+        width: 100%;
+    }
+    .guide-info-container > ul {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+    .guide-info-container > ul > li {
+        margin-bottom: 20px;
+    }
+
 }
 
 
@@ -1020,7 +1175,26 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     .main-curation-box {
         margin-left: 20px;
     }
+
+    .guide-container h1 {
+        width: 100%;
+        margin-left: 20px;
+    }
+    .guide-content-box {
+        width: auto;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .guide-notice-box {
+        margin-left: 20px;
+    }
+    .notive-themore {
+        margin-right: 20px;
+    }
 }
+
+
+
 
 
 @media (max-width: 1024px) {
@@ -1117,8 +1291,6 @@ input:focus::-webkit-input-placeholder {color:transparent; }
     }
 
 
-
-
     .search-movies-box {
         width: auto;
         margin: 0px 6px 0px 6px;   
@@ -1163,6 +1335,24 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         margin-right: 6px;
     }
 
+    .guide-content-box ul li {
+        margin-bottom: 40px;
+    }
+    .guide-container h1 {
+        width: 100%;
+        margin-left: 6px;
+    }
+    .guide-content-box {
+        width: auto;
+        margin-left: 6px;
+        margin-right: 6px;
+    }
+    .guide-notice-box {
+        margin-left: 6px;
+    }
+    .notive-themore {
+        margin-right: 6px;
+    }
 
 
 }
@@ -1189,6 +1379,12 @@ input:focus::-webkit-input-placeholder {color:transparent; }
         margin-left: 6px;
         margin-right: 6px;
     }
+
+    .guide-notice-box div {
+        display: none;
+    }
+
+
 }
 @media (min-width: 480px) {
 
