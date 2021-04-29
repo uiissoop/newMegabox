@@ -21,6 +21,36 @@ new Swiper('.swiper01', {
   })
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
 new Swiper('.swiper02', {
   slidesPerView : '4', // 한 슬라이드에 보여줄 갯수
   spaceBetween : 15, 
@@ -34,7 +64,7 @@ new Swiper('.swiper02', {
   },
   autoplay: {
     delay : 5000,
-    disableOnInteraction : false,
+    disableOnInteraction : true,
   },
   // slidesOffsetBefore :  // 슬라이드 시작 부분 여백
 
